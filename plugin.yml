@@ -1,0 +1,19 @@
+name: PortalEntityRestriction
+main: uk.co.kyusuke.PortalEntityRestriction
+version: 1.0
+author: Kyusuke
+description: A plugin to restrict the transfer of items through portals depending on the world.
+commands:
+  peridentify:
+    description: Identifies the world name and the UUID of the current location.
+    usage: /peridentify
+  perrestrict:
+    description: Adds the current world to the list to prevent entities from being transported into portals on the current world.
+    usage: /perrestrict
+    permission: portalentityrestriction.restrict
+    permission-message: You do not have permission to run this command
+  perallow:
+    description: Removes the world from the list and allows entities to be transported through portals.
+    usage: /perallow
+    permission: portalentityrestriction.allow
+    permission-message: You do not have permission to run this command
